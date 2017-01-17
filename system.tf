@@ -67,7 +67,7 @@ data "aws_ami" "ubuntu" {
 # The instance itself
 resource "aws_instance" "web" {
   ami = "${data.aws_ami.ubuntu.id}"
-  instance_type = "m3.medium"
+  instance_type = "m3.large"
   tags {
       Name = "EIAScrape"
   }

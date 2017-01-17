@@ -4,3 +4,4 @@ set -euo pipefail
 cd $HOME/data
 
 tmux -c 'wget --recursive --no-clobber --page-requisites --html-extension --convert-links --restrict-file-names=windows --domains eia.gov --no-parent https://www.eia.gov'
+tmux -c 'wget --recursive --no-clobber --page-requisites --html-extension --convert-links --restrict-file-names=windows --domains energy.gov --no-parent https://energy.gov'
